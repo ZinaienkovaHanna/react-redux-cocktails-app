@@ -13,7 +13,7 @@
     --backgroundColor: #13191e;
     --backgroundCardColor: #182026;
     --backgroundInputColor: #182026;
-    --backgroundMenuColor: #000;
+    --backgroundMenuColor: #101010;
     --backgroundButtonColor: #545b60;
     --backgroundIconColor: #13191e;
 
@@ -52,12 +52,12 @@
 
     /* ### Width */
     --containerWidth: 1200px;
-    --menuWidth: 600px;
+    --menuWidth: 300px;
     --cardWidth: 188px;
     --imageCardWidth: 188px;
     --imagePageWidth: 400px;
-    --inputWidth: 400px;
-    --buttonWidth: 100px;
+    --inputWidth: 200px;
+    --selectWidth: 216px;
 
     /* ### Height */
     --menuHeight: 60px;
@@ -65,6 +65,7 @@
     --cardTitleHeight: 64px;
     --logoHeight: 48px;
     --inputHeight: 32px;
+    --selectHeight: 34px;
     --buttonHeight: 32px;
 }
 
@@ -74,5 +75,4 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: var(--backgroundColor);
-    height: 100%;
 }

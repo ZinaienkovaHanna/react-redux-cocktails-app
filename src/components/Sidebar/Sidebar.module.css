@@ -1,0 +1,26 @@
+.container {
+    height: 100vh;
+    width: var(--menuWidth);
+    background-color: var(--backgroundMenuColor);
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    height: var(--spacingExtraMedium);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link {
+    color: var(--textMenuColor);
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightLight);
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: var(--linkHoverColor);
+}
