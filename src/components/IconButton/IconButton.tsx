@@ -8,18 +8,11 @@ interface IconButtonProps {
     path: string;
     title?: string;
     size: number;
-    type?: string | undefined;
 }
 
-const IconButton: FC<IconButtonProps> = ({
-    onClick,
-    path,
-    title,
-    size,
-    type,
-}) => {
+const IconButton: FC<IconButtonProps> = ({ onClick, path, title, size }) => {
     return (
-        <button onClick={onClick} className={styles.button}>
+        <button onClick={onClick} className={styles.button} title={title}>
             <Icon path={path} size={size} />
         </button>
     );
