@@ -1,4 +1,8 @@
 .container {
     width: var(--menuWidth);
+    min-height: 100vh;
     background-color: var(--backgroundMenuColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
