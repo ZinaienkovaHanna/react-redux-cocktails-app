@@ -1,33 +1,4 @@
 .container {
-    height: 100vh;
     width: var(--menuWidth);
     background-color: var(--backgroundMenuColor);
-}
-
-.wrapper {
-    margin: 0;
-    padding: 0;
-    border: 1px solid red;
-    width: 214px;
-    height: var(--spacingExtraMedium);
-    margin: auto;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav_link {
-    color: var(--textMenuColor);
-    font-size: var(--fontSizeBase);
-    font-weight: var(--fontWeightLight);
-    text-decoration: none;
-}
-
-.nav_link:hover {
-    color: var(--linkHoverColor);
-}
-
-.logo {
-    height: var(--logoHeight);
 }

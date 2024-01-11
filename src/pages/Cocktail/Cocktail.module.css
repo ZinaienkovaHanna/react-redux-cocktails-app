@@ -1,0 +1,10 @@
+.container {
+    width: var(--containerWidth);
+    margin: var(--spacingExtraMedium) auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacingExtraMedium);
+    color: var(--textColor);
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightLight);
+}
