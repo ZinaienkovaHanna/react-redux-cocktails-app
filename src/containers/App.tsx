@@ -8,6 +8,12 @@ import CocktailsByName from '../pages/CocktailsByName';
 import CocktailsByIngredient from '../pages/CocktailsByIngredient';
 import CocktailsByCategory from '../pages/CocktailsByCategory';
 import FavoriteList from '../pages/FavoriteList';
+import {
+    cocktailLoader,
+    cocktailsByNameLoader,
+    cocktailsByIngredientLoader,
+    cocktailsByCategoryLoader,
+} from '../pages/loader';
 
 const router = createBrowserRouter([
     {
@@ -22,18 +28,22 @@ const router = createBrowserRouter([
             {
                 path: '/cocktails/:cocktailId',
                 element: <Cocktail />,
+                loader: cocktailLoader,
             },
             {
                 path: '/cocktails/search/:searchByName',
                 element: <CocktailsByName />,
+                loader: cocktailsByNameLoader,
             },
             {
                 path: '/cocktails/search/:searchByIngredient',
                 element: <CocktailsByIngredient />,
+                loader: cocktailsByIngredientLoader,
             },
             {
                 path: '/cocktails/search/:searchByCategory',
                 element: <CocktailsByCategory />,
+                loader: cocktailsByCategoryLoader,
             },
             {
                 path: '/favorite',

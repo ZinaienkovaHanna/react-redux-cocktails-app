@@ -8,9 +8,9 @@ export interface Cocktail {
     name: string;
     isFavorite: boolean;
     isPopular: boolean;
-    category: string;
-    alcoholic: string;
-    glass: string;
+    category: string | null;
+    alcoholic: string | null;
+    glass: string | null;
     instructions: string;
     image: string;
     ingredients: Ingredient[];
@@ -19,31 +19,31 @@ export interface Cocktail {
 export interface CocktailAPI {
     idDrink: string;
     strDrink: string;
-    strCategory: string;
-    strAlcoholic: string;
-    strGlass: string;
+    strCategory: string | null;
+    strAlcoholic: string | null;
+    strGlass: string | null;
     strInstructions: string;
     strDrinkThumb: string;
-    strIngredient1: string;
-    strMeasure1: string;
-    strIngredient2: string;
-    strMeasure2: string;
-    strIngredient3: string;
-    strMeasure3: string;
-    strIngredient4: string;
-    strMeasure4: string;
-    strIngredient5: string;
-    strMeasure5: string;
-    strIngredient6: string;
-    strMeasure6: string;
-    strIngredient7: string;
-    strMeasure7: string;
-    strIngredient8: string;
-    strMeasure8: string;
-    strIngredient9: string;
-    strMeasure9: string;
-    strIngredient10: string;
-    strMeasure10: string;
+    strIngredient1: string | null;
+    strMeasure1: string | null;
+    strIngredient2: string | null;
+    strMeasure2: string | null;
+    strIngredient3: string | null;
+    strMeasure3: string | null;
+    strIngredient4: string | null;
+    strMeasure4: string | null;
+    strIngredient5: string | null;
+    strMeasure5: string | null;
+    strIngredient6: string | null;
+    strMeasure6: string | null;
+    strIngredient7: string | null;
+    strMeasure7: string | null;
+    strIngredient8: string | null;
+    strMeasure8: string | null;
+    strIngredient9: string | null;
+    strMeasure9: string | null;
+    strIngredient10: string | null;
+    strMeasure10: string | null;
 }
 
 export interface CocktailByIngredient {

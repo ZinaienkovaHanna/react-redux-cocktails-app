@@ -13,7 +13,9 @@
     --backgroundColor: #13191e;
     --backgroundCardColor: #182026;
     --backgroundInputColor: #182026;
-    --backgroundMenuColor: #101010;
+    /* --backgroundMenuColor: #101010; */
+    --backgroundMenuColor: #000;
+
     --backgroundButtonColor: #545b60;
     --backgroundIconColor: #13191e;
 
@@ -51,7 +53,7 @@
     --borderRadius: 4px;
 
     /* ### Width */
-    --containerWidth: 1200px;
+    --containerWidth: 1000px;
     --menuWidth: 300px;
     --cardWidth: 188px;
     --imageCardWidth: 188px;

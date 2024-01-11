@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { NavLink } from 'react-router-dom';
+import Menu from '../Menu';
 import Search from '../Search';
 import Dropdown from '../Dropdown';
 import namesCocktails from '../../mockedData/autocompleteCocktails.json';
@@ -11,6 +11,7 @@ import styles from './Sidebar.module.css';
 const Sidebar: FC = () => {
     return (
         <div className={styles.container}>
+            <Menu />
             <Search
                 placeholder="Search by name"
                 autocompleteData={namesCocktails}
@@ -20,15 +21,6 @@ const Sidebar: FC = () => {
                 autocompleteData={namesIngredients}
             />
             <Dropdown categories={namesCategories} />
-            <nav>
-                <ul className={styles.wrapper}>
-                    <li>
-                        <NavLink to="/favorite" className={styles.nav_link}>
-                            Favorite
-                        </NavLink>
-                    </li>
-                </ul>
-            </nav>
         </div>
     );
 };

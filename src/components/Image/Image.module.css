@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    width: var(--imageCardWidth);
+    border-radius: var(--borderRadius);
+    user-select: none;
+    filter: grayscale(50%);
+}
+
+.page_image {
+    width: var(--imagePageWidth);
+}

@@ -1,7 +1,15 @@
-import React from 'react';
+import { FC } from 'react';
+import CocktailList from '../../components/CocktailList';
 
-const Home = () => {
-    return <div>Home</div>;
+import popularCocktails from '../../mockedData/popularCocktails.json';
+
+const Home: FC = () => {
+    return (
+        <CocktailList
+            cocktails={popularCocktails}
+            title="Great COCKTAILS recipes you should know!"
+        />
+    );
 };
 
 export default Home;
