@@ -31,17 +31,17 @@ const router = createBrowserRouter([
                 loader: cocktailLoader,
             },
             {
-                path: '/cocktails/search/:searchByName',
+                path: '/cocktails/searchByName/:searchByName',
                 element: <CocktailsByName />,
                 loader: cocktailsByNameLoader,
             },
             {
-                path: '/cocktails/search/:searchByIngredient',
+                path: '/cocktails/searchByIngredient/:searchByIngredient',
                 element: <CocktailsByIngredient />,
                 loader: cocktailsByIngredientLoader,
             },
             {
-                path: '/cocktails/search/:searchByCategory',
+                path: '/cocktails/searchByCategory/:searchByCategory',
                 element: <CocktailsByCategory />,
                 loader: cocktailsByCategoryLoader,
             },

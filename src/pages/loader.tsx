@@ -6,11 +6,7 @@ import {
     getCocktailsByCategory,
 } from '../services/cocktailsAPI';
 
-export const cocktailLoader = async ({
-    params,
-}: {
-    params: Params<'cocktailId'>;
-}) => {
+export const cocktailLoader = async ({ params }: { params: Params<'cocktailId'> }) => {
     try {
         const cocktailId = params.cocktailId;
 
@@ -27,67 +23,61 @@ export const cocktailLoader = async ({
     }
 };
 
-export const cocktailsByNameLoader = async ({
-    params,
-}: {
-    params: Params<'searchByNameValue'>;
-}) => {
+export const cocktailsByNameLoader = async ({ params }: { params: Params<'searchByName'> }) => {
     try {
-        const searchByNameValue = params.searchByNameValue;
+        const name = params.searchByName;
 
-        if (!searchByNameValue) {
+        if (!name) {
             throw new Error('Cocktail value is undefined');
         }
 
-        const cocktailSearchByName = await getCocktailsByName(
-            searchByNameValue
-        );
+        const cocktailsSearchByName = await getCocktailsByName(name);
 
-        return { cocktailSearchByName, searchByNameValue };
+        return { cocktailsSearchByName, name };
     } catch (error) {
         const typedError = error as Error;
         console.error(`{message: ${typedError?.message}}`);
+        return { cocktailsSearchByName: [] };
     }
 };
 
 export const cocktailsByIngredientLoader = async ({
     params,
 }: {
-    params: Params<'searchByIngredientValue'>;
+    params: Params<'searchByIngredient'>;
 }) => {
     try {
-        const searchByIngredientValue = params.searchByIngredientValue;
+        const ingredient = params.searchByIngredient;
 
-        if (!searchByIngredientValue) {
+        if (!ingredient) {
             throw new Error('Ingredient value is undefined');
         }
 
-        const cocktailsByIngredient = await getCocktailsByIngredient(
-            searchByIngredientValue
-        );
+        const cocktailsByIngredient = await getCocktailsByIngredient(ingredient);
 
-        return { cocktailsByIngredient, searchByIngredientValue };
+        return { cocktailsByIngredient, ingredient };
     } catch (error) {
         const typedError = error as Error;
         console.error(`{message: ${typedError?.message}}`);
+        return { cocktailsByIngredient: [] };
     }
 };
 
 export const cocktailsByCategoryLoader = async ({
     params,
 }: {
-    params: Params<'categoryValue'>;
+    params: Params<'searchByCategory'>;
 }) => {
     try {
-        const categoryValue = params.categoryValue;
+        const category = params.searchByCategory;
 
-        if (!categoryValue) {
+        if (!category) {
             throw new Error('Category value is undefined');
         }
 
-        const cocktailsByCategory = await getCocktailsByCategory(categoryValue);
+        const cocktailsByCategory = await getCocktailsByCategory(category);
 
-        return { cocktailsByCategory, categoryValue };
+        return { cocktailsByCategory, category };
     } catch (error) {
         const typedError = error as Error;
         console.error(`{message: ${typedError?.message}}`);

@@ -19,20 +19,13 @@ const Menu: FC = () => {
                 <li>
                     <NavLink
                         to="/"
-                        className={({ isActive }) =>
-                            isActive ? styles.active : styles.nav_link
-                        }
+                        className={({ isActive }) => (isActive ? styles.active : styles.nav_link)}
                     >
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink
-                        to="/favorite"
-                        className={({ isActive }) =>
-                            isActive ? styles.active : styles.nav_link
-                        }
-                    >
+                    <NavLink to="/favorite" className={styles.nav_link}>
                         Favorite
                     </NavLink>
                 </li>

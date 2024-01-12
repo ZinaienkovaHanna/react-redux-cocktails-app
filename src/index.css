@@ -13,9 +13,8 @@
     --backgroundColor: #13191e;
     --backgroundCardColor: #182026;
     --backgroundInputColor: #182026;
-    /* --backgroundMenuColor: #101010; */
+    --backgroundSearchLi: #13191e;
     --backgroundMenuColor: #000;
-
     --backgroundButtonColor: #545b60;
     --backgroundIconColor: #13191e;
 
@@ -54,21 +53,24 @@
 
     /* ### Width */
     --containerWidth: 1000px;
-    --menuWidth: 300px;
+    --menuWidth: 260px;
     --cardWidth: 188px;
     --imageCardWidth: 188px;
     --imagePageWidth: 400px;
+    --searchContainerWidth: 236px;
     --inputWidth: 200px;
-    --selectWidth: 216px;
+    --selectWidth: 236px;
 
     /* ### Height */
     --menuHeight: 60px;
     --cardHeight: 264px;
     --cardTitleHeight: 64px;
-    --logoHeight: 48px;
+    --logoHeight: 60px;
     --inputHeight: 32px;
     --selectHeight: 34px;
     --buttonHeight: 32px;
+    --searchContainerHeight: 248px;
+    --liContainerHeight: 24px;
 }
 
 body {
