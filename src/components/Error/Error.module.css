@@ -1,0 +1,8 @@
+.text {
+    padding-top: var(--spacingMedium);
+    padding-left: var(--spacingMedium);
+    color: var(--textCardColor);
+    font-size: var(--fontSizeMedium);
+    font-style: italic;
+    font-weight: var(--fontWeightRegular);
+}

@@ -1,0 +1,38 @@
+.container {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin-top: var(--spacingSmall);
+    background-color: var(--backgroundCardColor);
+    border-radius: var(--borderRadius);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.title_container {
+    height: var(--cardTitleHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    margin: 0;
+    padding: 0 var(--spacingBase);
+    text-align: center;
+    color: var(--titleCardColor);
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightRegular);
+}
+
+.name:hover {
+    color: var(--titleCardListColor);
+    font-weight: var(--fontWeightSemiBold);
+}
+
+.icon {
+    color: var(--iconColor);
+}

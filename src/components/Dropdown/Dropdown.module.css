@@ -1,0 +1,23 @@
+.container {
+    padding-left: var(--spacingSmall);
+}
+
+.select {
+    width: var(--selectWidth);
+    height: var(--selectHeight);
+    border: none;
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundInputColor);
+    color: var(--inputPlaceholderColor);
+    padding-left: var(--spacingSmall);
+    font-size: var(--fontSizeSmall);
+}
+
+.select:focus {
+    outline: none;
+    border: 1px solid var(--activeBorderColor);
+}
+
+.option {
+    border: none;
+}

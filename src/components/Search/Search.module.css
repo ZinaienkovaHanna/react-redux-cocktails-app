@@ -1,0 +1,73 @@
+.container {
+    width: var(--searchContainerWidth);
+    height: var(--searchContainerHeight);
+    margin: auto;
+    margin-bottom: var(--inputHeight);
+    border-radius: var(--borderRadius);
+}
+
+.search_form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacingBase);
+    justify-items: center;
+    align-items: center;
+}
+
+.search_input {
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border: none;
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundInputColor);
+    color: var(--textColor);
+    font-size: var(--fontSizeBase);
+    margin-top: var(--spacingSmall);
+    padding-left: var(--spacingSmall);
+}
+
+.search_input::placeholder {
+    color: var(--inputPlaceholderColor);
+    font-size: var(--fontSizeSmall);
+}
+
+.search_input:focus {
+    outline: none;
+    border: 1px solid var(--activeBorderColor);
+}
+
+.search_input.invalid {
+    border-color: var(--invalidColor);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    margin-top: var(--spacingSmall);
+    color: var(--textColor);
+    list-style-type: none;
+    font-size: var(--fontSizeSmall);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-items: center;
+    align-items: center;
+}
+
+.li_container {
+    width: var(--inputWidth);
+    height: var(--liContainerHeight);
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundSearchLi);
+    display: flex;
+    align-items: center;
+    padding-left: var(--spacingSmall);
+}
+
+.li {
+    cursor: pointer;
+}
+
+.li:hover {
+    color: var(--textColor);
+}

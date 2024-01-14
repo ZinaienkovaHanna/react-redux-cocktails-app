@@ -1,0 +1,26 @@
+.container {
+    width: var(--containerWidth);
+    margin: auto;
+    margin-bottom: var(--spacingLarge);
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacingSmall);
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: var(--spacingLarge);
+    padding-top: var(--spacingLarge);
+    color: var(--titleCardListColor);
+    font-size: var(--fontSizeMedium);
+    font-style: italic;
+    font-weight: var(--fontWeightRegular);
+}
+
+.link {
+    text-decoration: none;
+}
