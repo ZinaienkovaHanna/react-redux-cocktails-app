@@ -31,10 +31,9 @@
     --spacingBase: 8px;
     --spacingExtraSmall: 4px;
     --spacingSmall: 12px;
-    --spacingMedium: 40px;
-    --spacingExtraMedium: 100px;
-    --spacingLarge: 140px;
-    --spacingExtraLarge: 180px;
+    --spacingMedium: 24px;
+    --spacingLarge: 40px;
+    --spacingExtraLarge: 100px;
 
     /* ### Font-size */
     --fontSizeBase: 16px;
@@ -69,7 +68,7 @@
     --inputHeight: 32px;
     --selectHeight: 34px;
     --buttonHeight: 32px;
-    --searchContainerHeight: 248px;
+    --searchContainerHeight: 200px;
     --liContainerHeight: 24px;
 }
 

@@ -1,6 +1,7 @@
 .container {
     width: var(--containerWidth);
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: var(--spacingLarge);
 }
 
 .card_container {
@@ -12,8 +13,8 @@
 .title {
     margin: 0;
     padding: 0;
-    padding-bottom: var(--spacingMedium);
-    padding-top: var(--spacingMedium);
+    padding-bottom: var(--spacingLarge);
+    padding-top: var(--spacingLarge);
     color: var(--titleCardListColor);
     font-size: var(--fontSizeMedium);
     font-style: italic;

@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
-    gap: var(--spacingBase);
+    margin-top: var(--spacingMedium);
+    margin-bottom: var(--spacingMedium);
 }
 
 .nav_link {
@@ -24,8 +24,6 @@
 
 .logo {
     height: var(--logoHeight);
-    margin-top: var(--spacingMedium);
-    margin-bottom: var(--spacingMedium);
 }
 
 .active {
